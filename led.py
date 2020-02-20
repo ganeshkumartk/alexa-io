@@ -11,15 +11,15 @@ import RPi.GPIO as G
 import time
 aio = Client('YOUR_AIO_USERNAME', 'YOUR_AIO_KEY')
 G.setmode(G.BCM)
-G.setup(18,G.OUT)                     //LED connected at GPIO Pin 18 
+G.setup(18,G.OUT)                     #LED connected at GPIO Pin 18 
 try:
 	digital = aio.feeds('led')
-except RequestError:                  //Checks if Corresponding feed is present in Adafruit IO else, creates newly.
+except RequestError:                  #Checks if Corresponding feed is present in Adafruit IO else, creates newly.
 	feed = Feed(name='led')
 	digital = aio.create_feed(feed)
 	data = aio.feeds('led')
 
-while True:                            //Recieve Triggers from Dashboard via Alexa
+while True:                            #Recieve Triggers from Dashboard via Alexa
 	data = aio.receive(digital.key)
 	if data.value == 'ON':
 		G.output(18,G.HIGH)
