@@ -30,6 +30,10 @@ pip install -r 'requirements.txt'
 ~~~python
 aio = Client('YOUR_AIO_USERNAME', 'YOUR_AIO_KEY')
 ~~~
+* LED pin set at GPIO.PIN 18 by Default, if you wish to change you can update
+~~~python
+G.setup(<YOUR_PIN_HERE>,G.OUT)
+~~~
 * Run Python script to get working at Raspberry Pi
 ~~~bash
 python led.py
