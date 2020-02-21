@@ -1,5 +1,12 @@
-# Alexa-io
-Alexa Triggered LED via Adafruit Python IO &amp; IFTTT !
+<h1 align="center">
+  <br>
+  <a href="https://github.com/CoDeRgAnEsh/alexa-io"><img src="docs/alexa.png" alt="pic2pill" width="200"></a>
+  <br>
+  AlexaIO
+  <br>
+</h1>
+<h4 align="center">Alexa Triggered LED via Adafruit Python IO in Raspberry Pi & IFTTT !</h4>
+
 
 ## Usage
 
