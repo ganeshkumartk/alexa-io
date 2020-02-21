@@ -19,6 +19,10 @@ cd alexa-io
 ~~~bash
 pip install -r 'requirements.txt'
 ~~~
+* Open [led.py](https://github.com/CoDeRgAnEsh/alexa-io/blob/master/led.py) & Place Your Adafruit IO Credentials and Save.
+~~~python
+aio = Client('YOUR_AIO_USERNAME', 'YOUR_AIO_KEY')
+~~~
 * Run Python script to get working at Raspberry Pi
 ~~~bash
 python led.py
